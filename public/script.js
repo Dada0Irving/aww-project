@@ -42,8 +42,7 @@ function displayMessage(message, senderClass) {
     }
 
     var messageText = document.createElement('span');
-    // Convert URLs in the message to clickable links
-    message = message.replace(/(https?:\/\/[^\s]+)/g, '<a href="$1" target="_blank">$1</a>');
+    // Use innerHTML to allow HTML tags to be rendered
     messageText.innerHTML = message.replace(/\n/g, '<br>');
 
     messageDiv.appendChild(avatar);

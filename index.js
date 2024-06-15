@@ -6,6 +6,7 @@ const csv = require('csv-parser');
 
 const app = express();
 const port = process.env.PORT || 3000;
+require('dotenv').config();
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
