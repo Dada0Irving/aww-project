@@ -1,0 +1,244 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #e6eef8;
+    background-image: url('bg.jpeg'); /* Replace with your image path */
+    background-size: cover; /* This will ensure that the image covers the whole area */
+    background-position: center; /* This centers the image in the view */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+    padding-top: 50px;
+}
+
+#stanford-logo {
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+#chat-container {
+    width: 500px; /* Increased width */
+    height: 700px; /* Increased height */
+    border-radius: 15px;
+    background-color: #fff; /* White for Baymax */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border: 2px solid #B83A4B; /* Light Stanford Red */
+}
+
+#chat-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background-color: #B83A4B; /* Light Stanford Red for user messages */
+    color: white;
+    align-self: flex-end;
+}
+
+.message span {
+    margin-left: 10px;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#message-input {
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: #8C1515; /* Cardinal Red */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #820000; /* Dark Stanford Red */
+}
+
+#predefined-questions {
+    margin-bottom: 5px;
+    display: flex; /* Aligns children (buttons) in a row */
+}
+
+#predefined-questions button {
+    font-size: 13px;
+    flex: 1; /* Each button takes equal space */
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 5px; /* Spacing between buttons */
+    border: none;
+    cursor: pointer;
+    background-color: #B83A4B; /* Example color - different from the send button */
+    color: white;
+}
+
+#predefined-questions button:last-child {
+    margin-right: 0; /* Removes margin for the last button */
+}
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    align-items: flex-start;
+    position: relative;
+}
+
+#topic-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#topic-buttons button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: left;
+    transform: skew(-20deg);
+    width: 150px;
+}
+
+#topic-buttons button:nth-child(1) {
+    background-color: #FF5733; /* Color 1 */
+}
+
+#topic-buttons button:nth-child(2) {
+    background-color: #FFBD33; /* Color 2 */
+}
+
+#topic-buttons button:nth-child(3) {
+    background-color: #DBFF33; /* Color 3 */
+}
+
+#topic-buttons button:nth-child(4) {
+    background-color: #75FF33; /* Color 4 */
+}
+
+#topic-buttons button:nth-child(5) {
+    background-color: #33FF57; /* Color 5 */
+}
+
+#topic-buttons button:nth-child(6) {
+    background-color: #33FFBD; /* Color 6 */
+}
+
+#topic-buttons button:nth-child(7) {
+    background-color: #33DBFF; /* Color 7 */
+}
+
+#topic-buttons button:nth-child(8) {
+    background-color: #3375FF; /* Color 8 */
+}
+
+#topic-buttons button:nth-child(9) {
+    background-color: #5733FF; /* Color 9 */
+}
+
+#topic-buttons button:nth-child(10) {
+    background-color: #BD33FF; /* Color 10 */
+}
+
+#topic-buttons button:nth-child(11) {
+    background-color: #FF33DB; /* Color 11 */
+}
+
+#topic-buttons button:nth-child(12) {
+    background-color: #FF3375; /* Color 12 */
+}
+
+#topic-buttons button:nth-child(13) {
+    background-color: #FF3360; /* Color 13 */
+}
+
+#topic-buttons button:nth-child(14) {
+    background-color: #FF3366; /* Color 14 */
+}
+
+#topic-buttons button:hover {
+    opacity: 0.8;
+}
+
+#question-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+
+#question-list button {
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: left;
+    width: 200px;
+}
+
+#question-list button:hover {
+    opacity: 0.8;
+}
+
+#designed-by {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 24px; /* Two times larger */
+    color: white;
+    font-family: 'Playwrite CO', cursive; /* Apply elegant font */
+}
+
+#designed-by a {
+    color: white;
+    text-decoration: none;
+}
+
+#designed-by a:hover {
+    text-decoration: underline;
+}

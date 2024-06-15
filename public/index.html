@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aww: Chat with me!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CO&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-header">
+            <img src="logo.png" id="stanford-logo" alt="Stanford Logo">
+        </div>
+        <div id="messages"></div>
+        <div id="predefined-questions">
+            <button onclick="askPredefinedQuestion('What is Aww')">What is Aww</button>
+            <button onclick="askPredefinedQuestion('Aww, that\'s cute!')">Aww, that's cute!</button>
+        </div>
+        <input type="text" id="message-input" placeholder="Type your message here..." autofocus>
+        <button onclick="sendMessage()">Send</button>
+    </div>
+    <div id="sidebar">
+        <div id="topic-buttons">
+            <!-- Buttons will be dynamically added here -->
+        </div>
+        <div id="question-list">
+            <!-- Questions will be dynamically added here -->
+        </div>
+    </div>
+    <!-- Designed by Owen -->
+    <div id="designed-by">
+        Designed by <a href="https://dada0irving.github.io" target="_blank">Owen</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
